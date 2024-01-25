@@ -19,6 +19,7 @@
 .form {
   padding: 60px;
   background-color: #FFF;
+  border-radius: 32px;
 }
 
 .form__fieldset {
@@ -102,9 +103,42 @@
 .form__input-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.form__input {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #F0F4F4;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%; 
+}
+
+.form__info {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.form__btn-wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.form__btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 20px;
+  border-radius: 50px;
+  background: #F0F4F4;
 }
 
 .form__btn_next {
+  flex-direction: row-reverse;
   background-color: #D10014;
 }
 
