@@ -6,19 +6,47 @@
 .header__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.header__button {
-  display: flex;
+.header__logo {
+  width: 254px;
+}
+
+.header__link {
   height: 46px;
   padding: 12px 20px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
   border-radius: 50px;
   background: #F0F4F4;
-  color: #222;
   font-size: 16px;
   font-weight: 500;
   line-height: 140%;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+.header__link:hover {
+  background-color: #E4F0F0;
+}
+
+.header__link:focus-visible {
+  border-color: #D10014;
+}
+
+@media (max-width: 900px) {
+  .header {
+    padding-top: 24px;
+  }
+
+  .header__logo {
+    width: 180px;
+  }
+}
+
+@media (max-width: 660px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
 }

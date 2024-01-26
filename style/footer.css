@@ -7,13 +7,43 @@
   line-height: 140%; 
 }
 
-.footer__logo {
-  width: 479px;
-  height: 76px;
-  margin-bottom: 79px;
+.footer__container {
+  display: grid;
+  grid-template-areas: 
+  "logo ."
+  "copyright developers";
+  gap: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
 }
 
-.footer__bottom {
-  display: flex;
-  justify-content: space-between;
+.footer__logo {
+  grid-area: logo;
+  width: 100%;
+  max-width: 480px;
 }
+
+.footer__copyright {
+  grid-area: copyright;
+}
+
+.footer__developers {
+  grid-area: developers;
+  justify-self: start;
+  justify-self: end;
+
+}
+
+.footer__developer {
+  margin-bottom: 7px;
+}
+
+.footer__developer:last-child {
+  margin-bottom: 0;
+}
+
+.footer__developer-link:hover {
+  color: #D10014;
+}
+

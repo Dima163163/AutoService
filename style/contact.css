@@ -77,6 +77,8 @@
 }
 
 .form__months {
+  display: flex;
+  gap: 16px;
   margin-bottom: 16px;
 }
 
@@ -88,9 +90,7 @@
 
 .form__btn-month_active {
   color: #D10014;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 140%; 
+  transform: scale(1.15);
 }
 
 .form__subtitle {
@@ -111,11 +111,21 @@
 .form__input {
   padding: 12px 20px;
   border-radius: 8px;
-  border: none;
   background: #F0F4F4;
+  color: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 140%; 
+  border-color: #F0F4F4;
+  border: 1px solid transparent;
+}
+
+.form__input:hover {
+  background-color: #F0F4F4;
+}
+
+.form__input:focus-visible {
+  border-color: #D0D0D0;
 }
 
 .form__info {
@@ -132,24 +142,43 @@
 .form__btn {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   padding: 12px 20px;
   border-radius: 50px;
   background: #F0F4F4;
+  font-size: 16px;
+  color: #222;
+  font-weight: 500;
+  line-height: 140%;
 }
 
 .form__btn_next {
   flex-direction: row-reverse;
   background-color: #D10014;
+  color: #FFF;
+}
+
+.form__btn_submit {
+  flex-direction: row-reverse;
+  background-color: #D10014;
+  color: #FFF;
 }
 
 .form__btn:disabled {
   color: #222;
   background: #F0F4F4;
   opacity: 0.4;
+  pointer-events: none;
 }
 
-.radio {
+@media (max-width: 1080px) {
 
 }
 
+@media (max-width: 900px) {
+
+}
+
+@media (max-width: 660px) {
+
+}
